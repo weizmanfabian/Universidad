@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "850f18f0-2e98-43df-9bfe-786b3376acdd",
+		"name": "TestUniversidad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17147091"
+	},
+	"item": [
+		{
+			"name": "profesor",
+			"item": [
+				{
+					"name": "profesor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/profesores",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"profesores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profesor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let response = pm.response.json();\r",
+									"pm.globals.set(\"idProfesor\", response.id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Esteban Castañeda Herreño\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/profesores",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"profesores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profesor_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/profesores/{{idProfesor}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"profesores",
+								"{{idProfesor}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profesor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Weizman Castañeda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/profesores/{{idProfesor}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"profesores",
+								"{{idProfesor}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profesor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/profesores/{{idProfesor}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"profesores",
+								"{{idProfesor}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "estudiante",
+			"item": [
+				{
+					"name": "estudiante",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/estudiantes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "estudiante",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let response = pm.response.json();\r",
+									"pm.globals.set(\"idEstudiante\", response.id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Esteban Acosta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/estudiantes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "estudiante_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/estudiantes/{{idEstudiante}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes",
+								"{{idEstudiante}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "estudiante",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Fabian Castañeda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/estudiantes/{{idEstudiante}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes",
+								"{{idEstudiante}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "estudiante",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/estudiantes/{{idEstudiante}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes",
+								"{{idEstudiante}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notas",
+			"item": [
+				{
+					"name": "nota",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/notas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nota",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let response = pm.response.json();\r",
+									"pm.globals.set(\"idNota\", response.id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProfesor\": 3,\r\n    \"idEstudiante\": 2,\r\n    \"valor\": 8.9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/notas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nota_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/notas/{{idNota}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notas",
+								"{{idNota}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nota",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProfesor\": 2,\r\n    \"idEstudiante\": 2,\r\n    \"valor\": 9.7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/notas/{{idNota}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notas",
+								"{{idNota}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nota",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/notas/{{idNota}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notas",
+								"{{idNota}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8086/universidad",
+			"type": "string"
+		}
+	]
+}
