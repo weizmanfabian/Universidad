@@ -20,7 +20,7 @@ Asegúrese de tener instalados los siguientes elementos antes de continuar:
 Ejecute el siguiente comando para clonar el repositorio:
 
 ```bash
-[git clone https://github.com/WeizCode/Universidad.git](https://github.com/weizmanfabian/Universidad.git)
+git clone https://github.com/weizmanfabian/Universidad.git
 ```
 
 ### 2. Navegar al Directorio del Proyecto
