@@ -2,6 +2,12 @@
 
 Proyecto desarrollado con **Java 17**, **Docker Compose**, **PostgreSQL** y **React.js**.
 
+
+
+https://github.com/user-attachments/assets/dc576a87-cdec-4aff-8943-e03e10f2e730
+
+
+
 ## Requisitos Previos
 
 Asegúrese de tener instalados los siguientes elementos antes de continuar:
