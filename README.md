@@ -52,6 +52,10 @@ Ejecute el siguiente comando para iniciar los contenedores de la base de datos:
 ```bash
 docker-compose up
 ```
+**Nota:** Al finalizar si desea remover el contenedor ejecute en este mismo directorio:
+```bash
+docker-compose down
+```
 
 #### 3.3. Conexión a la Base de Datos (Opcional)
 
