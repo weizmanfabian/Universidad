@@ -8,7 +8,26 @@
 
 Sistema integral de gestión universitaria desarrollado con arquitectura de microservicios, implementando las mejores prácticas de desarrollo y patrones de diseño modernos.
 
-## Arquitectura del Sistema
+https://github.com/user-attachments/assets/dc576a87-cdec-4aff-8943-e03e10f2e730
+
+## Estructura del Proyecto
+
+```
+Universidad/
+├── UniversidadBack/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   └── resources/
+│   │   └── test/
+│   ├── dockerdocker-compose.yml
+│   └── pom.xml
+├── universidad-front/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+└── README.md
+```
 
 ### Backend
 - **Java 17**: Aprovechando las últimas características del lenguaje como Records, Pattern Matching y Sealed Classes
@@ -101,23 +120,6 @@ npm start
 
 La aplicación web estará disponible en http://localhost:3000
 
-## Estructura del Proyecto
 
-```
-Universidad/
-├── UniversidadBack/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   └── resources/
-│   │   └── test/
-│   ├── dockerdocker-compose.yml/
-│   └── pom.xml
-├── universidad-front/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-└── README.md
-```
 
 
