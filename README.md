@@ -71,7 +71,13 @@ Si desea conectarse a la base de datos creada, use las siguientes credenciales e
 
 Abra el proyecto en **IntelliJ IDEA** u otro IDE compatible, y ejecute la aplicación.
 
-#### 4.1. Importar pruebas de Postman (Opcional)
+#### 4.1. Acceso a la Documentación del Backend
+Puede acceder a la documentación de la API en la siguiente URL: `http://localhost:8086/universidad/v3/api-docs`. Para una interfaz más visual, utilice Swagger UI disponible en:
+```bash
+http://localhost:8086/universidad/swagger-ui/index.html
+```
+
+#### 4.2. Importar pruebas de Postman (Opcional)
  - Abrir Postman e importar `TestUniversidad.postman_collection` que se encuentra en directorio `./Universidad` y ejecutar pruebas de la api.
  - El puerto de la api es 8086.
  - la url de la api es `http://localhost:8086/universidad`
